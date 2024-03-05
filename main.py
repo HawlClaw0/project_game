@@ -4,8 +4,8 @@ pygame.font.init()
 BLACK = (255, 255, 255)
 col = [(0, 150, 0), (150, 0, 0), (150, 150, 0), (0, 0, 150), (255, 165, 0), (199, 21, 133),
        (128, 0, 128), (245, 222, 179), (112, 128, 144)]
-lvl = {'1 уровень': 5, '2 уровень': 10, '3 уровень': 20}
-
+with open('ancestors.json', encoding="utf-8") as json_f:
+    lvl = json.load(json_f)
 size = 200
 scale = .1
 pause1 = .1
